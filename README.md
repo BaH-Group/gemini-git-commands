@@ -16,12 +16,18 @@ Generate a concise, descriptive commit message based on your currently staged ch
 Push the current branch to the `origin` remote.
 - **Usage**: `/git:push`
 
+## Python Commands
+
+### `init`
+Scaffolds a clean Python project structure with a virtual environment and `.gitignore`.
+- **Usage**: `/python:init`
+
 ## Installation
 
 To install these commands globally, run:
 
 ```bash
-cp -r .gemini/commands/git ~/.gemini/commands/git
+cp -r .gemini/commands/* ~/.gemini/commands/
 ```
 
-Alternatively, ensure they are located in your `.gemini/commands/git/` directory within your project.
+Alternatively, ensure they are located in your `.gemini/commands/` directory within your project.
