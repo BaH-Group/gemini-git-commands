@@ -21,7 +21,7 @@ Push the current branch to the `origin` remote.
 To install these commands globally, run:
 
 ```bash
-cp -r .gemini/commands/git ~/.gemini/commands/
+cp -r .gemini/commands/git ~/.gemini/commands/git
 ```
 
 Alternatively, ensure they are located in your `.gemini/commands/git/` directory within your project.
