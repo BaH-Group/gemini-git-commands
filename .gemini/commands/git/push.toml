@@ -1,0 +1,10 @@
+description = "Push the current branch to the remote repository"
+
+prompt = """
+Execute a git push for the current branch.
+
+Command to execute:
+!{git push origin $(git branch --show-current)}
+
+{{args}}
+"""

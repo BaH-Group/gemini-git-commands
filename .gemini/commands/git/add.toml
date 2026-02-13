@@ -1,0 +1,16 @@
+description = "Stage changes (git add)"
+
+prompt = """
+I will help you stage your changes.
+
+To stage all changes, use:
+!{git add .}
+
+To stage specific files, please provide the file paths as arguments.
+For example: `/git:add path/to/main.py`
+
+If you provided arguments, I will execute:
+!{git add {{args}}}
+
+{{args}}
+"""

@@ -1,0 +1,10 @@
+description = "Generate a git commit message based on staged changes"
+
+prompt = """
+Analyze the following staged changes and generate a concise, descriptive git commit message following the project's conventions.
+
+Staged changes:
+!{git diff --staged}
+
+{{args}}
+"""
