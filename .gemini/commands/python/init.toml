@@ -3,13 +3,16 @@ prompt = """
 
 Role: Python Project Scaffolder.
 1. **File Structure**: Create the following files if they do not exist:
--  requirements.txt
+-  requirements.txt with the following content:
+    python-dotenv
+-  Create a .env file with empty content
 -  Create a README.md with empty content
 -  Create a .gitignore file with the following content:
     venv/
     __pycache__/
     *.pyc
     .DS_Store
+    .env
     additionally, include any other data types that should be ignored in a typical images, videos, and json.
 2. **Environment Setup**:
 -  Create virtual environment in the current directory with the name venv
@@ -17,6 +20,13 @@ Role: Python Project Scaffolder.
     - update pip to the latest version
     - install the required dependencies from requirements.txt
 -  Create a main.py file with the following content:
+    import os
+    from dotenv import load_dotenv
+
+    load_dotenv()
+
     if __name__ == "__main__":
         print("Hello, World!")
+        # Example usage of python-dotenv:
+        # print(os.getenv("MY_VARIABLE"))
 """
