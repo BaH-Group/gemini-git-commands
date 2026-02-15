@@ -1,0 +1,5 @@
+{
+  "name": "gemini-git-commands",
+  "version": "1.0.0",
+  "description": "Custom Git and Python commands for Gemini CLI"
+}

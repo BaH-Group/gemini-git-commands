@@ -1,33 +1,33 @@
-# Gemini Git Commands
+# Gemini Git Commands Extension
 
-This repository contains custom command definitions for the [Gemini CLI](https://github.com/google/gemini-cli) to streamline Git workflows.
-
-## Commands
-
-### `add`
-Stage changes in your repository.
-- **Usage**: `/git:add` (stages all changes) or `/git:add <file-path>` (stages specific files).
-
-### `commit`
-Generate a concise, descriptive commit message based on your currently staged changes.
-- **Usage**: `/git:commit`
-
-### `push`
-Push the current branch to the `origin` remote.
-- **Usage**: `/git:push`
-
-## Python Commands
-
-### `init`
-Scaffolds a clean Python project structure with a virtual environment and `.gitignore`.
-- **Usage**: `/python:init`
+This repository is a [Gemini CLI](https://github.com/google/gemini-cli) extension that provides custom commands to streamline Git and Python workflows.
 
 ## Installation
 
-To install these commands globally, run:
+To use this extension locally, clone the repository and link it:
 
 ```bash
-cp -r .gemini/commands/* ~/.gemini/commands/
+git clone https://github.com/BaH/gemini-git-commands.git
+cd gemini-git-commands
+gemini extensions link .
 ```
 
-Alternatively, ensure they are located in your `.gemini/commands/` directory within your project.
+## Commands
+
+### Git Group
+
+- **`git add`**: Stage changes.
+  - Usage: `gemini git add` (stages all) or `gemini git add <path>`
+- **`git commit`**: Generate a commit message from staged changes.
+  - Usage: `gemini git commit`
+- **`git push`**: Push to origin.
+  - Usage: `gemini git push`
+
+### Python Group
+
+- **`python init`**: Scaffold a new Python project structure.
+  - Usage: `gemini python init`
+
+## Development
+
+The commands are defined in the `commands/` directory as TOML files. The extension configuration is in `gemini-extension.json`.
