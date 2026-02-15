@@ -4,12 +4,22 @@ This repository is a [Gemini CLI](https://github.com/google/gemini-cli) extensio
 
 ## Installation
 
-To use this extension locally, clone the repository and link it:
+### Local Development (Linking)
+
+To use this extension locally for development or testing, clone the repository and link it:
 
 ```bash
 git clone https://github.com/BaH/gemini-git-commands.git
 cd gemini-git-commands
 gemini extensions link .
+```
+
+### Global Installation
+
+To install the extension globally from the repository:
+
+```bash
+gemini extensions install https://github.com/BaH/gemini-git-commands
 ```
 
 ## Commands
