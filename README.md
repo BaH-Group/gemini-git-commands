@@ -19,7 +19,7 @@ gemini extensions link .
 To install the extension globally from the repository:
 
 ```bash
-gemini extensions install https://github.com/BaH/gemini-git-commands
+gemini extensions install https://github.com/BaH-Group/gemini-git-commands
 ```
 
 ## Commands
